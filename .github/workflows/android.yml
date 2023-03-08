@@ -54,9 +54,6 @@ jobs:
       run: |
         chmod +x ./gradlew
         ./gradlew build
-
-    - name: Change to root directory
-      run: cd ../
       
     - name: Upload APK
       uses: actions/upload-artifact@v2
