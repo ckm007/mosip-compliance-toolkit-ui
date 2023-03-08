@@ -50,9 +50,8 @@ jobs:
       run: npx cap sync
       
     - name: Build APK
-      working-directory: android/app
+      working-directory: android
       run: |
-        pwd
         chmod +x ./gradlew
         ./gradlew build
 
