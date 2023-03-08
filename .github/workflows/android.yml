@@ -52,6 +52,7 @@ jobs:
     - name: Build APK
       working-directory: android/app
       run: |
+        pwd
         chmod +x ./gradlew
         ./gradlew build
 
